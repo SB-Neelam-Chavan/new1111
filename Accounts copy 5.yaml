@@ -1,0 +1,21 @@
+title: Accounts
+x-stoplight:
+  id: e3i04hgi2heuf
+description: Sorted and paginated list of accounts
+allOf:
+  - $ref: ./PaginatedCollection.yaml
+    x-stoplight:
+      id: kvxgrv4rx8b1a
+  - type: object
+    properties:
+      items:
+        type: array
+        description: Collection of accounts
+        items:
+          $ref: ./Account.yaml
+          x-stoplight:
+            id: 8oah6q7macknl
+        x-stoplight:
+          id: q1jdof0gt5kkz
+    x-stoplight:
+      id: ulk9h5b8h9wv0

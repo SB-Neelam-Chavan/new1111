@@ -1,0 +1,26 @@
+type: object
+x-stoplight:
+  id: nx0eggngddcsg
+properties:
+  userId:
+    type: string
+    x-stoplight:
+      id: sz2ptacdz4iqj
+  ownerName:
+    type: string
+    x-stoplight:
+      id: h31i2az4alf9t
+  status:
+    type: string
+    x-stoplight:
+      id: vl5kpeyrhsigr
+  creationDate:
+    type: string
+    x-stoplight:
+      id: sb7061o22y6ne
+x-examples:
+  Example 1:
+    userId: '123'
+    ownerName: John Doe
+    status: ACTIVE
+    creationDate: '2024-01-01'

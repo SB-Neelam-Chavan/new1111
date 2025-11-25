@@ -1,0 +1,6 @@
+title: RelationId
+x-stoplight:
+  id: 9wm9axibsc0gl
+type: string
+readOnly: true
+description: Identifier of a relation between parties

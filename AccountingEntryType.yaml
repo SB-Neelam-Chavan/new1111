@@ -1,0 +1,11 @@
+title: AccountingEntryType
+x-stoplight:
+  id: 13zqwmm14hubc
+type: string
+enum:
+  - TRANSFER
+  - FEE
+  - COMMISSION
+  - TAX
+  - DISCOUNT
+  - INTEREST

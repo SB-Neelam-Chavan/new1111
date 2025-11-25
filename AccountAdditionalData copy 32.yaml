@@ -1,0 +1,8 @@
+title: AccountAdditionalData
+x-stoplight:
+  id: nvv15ngtd97ri
+type: object
+description: Additional information associated with the account.
+example:
+  key1: value1
+  key2: value2

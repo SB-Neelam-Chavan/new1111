@@ -1,0 +1,6 @@
+title: AccountingEntryId
+x-stoplight:
+  id: a0inuh7vghtxv
+type: string
+description: Accounting entry id
+example: ACO4

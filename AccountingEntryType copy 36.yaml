@@ -1,0 +1,11 @@
+title: AccountingEntryType
+x-stoplight:
+  id: lput519iy3buy
+type: string
+enum:
+  - TRANSFER
+  - FEE
+  - COMMISSION
+  - TAX
+  - DISCOUNT
+  - INTEREST

@@ -1,0 +1,12 @@
+title: AccountStatus
+x-stoplight:
+  id: 0p5rsmixgl3x0
+type: string
+description: Banking account status.
+readOnly: true
+enum:
+  - OPENED
+  - CLOSED
+  - BLOCKED
+  - DEBIT_BLOCKED
+  - CREDIT_BLOCKED

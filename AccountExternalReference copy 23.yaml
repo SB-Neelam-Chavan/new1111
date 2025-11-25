@@ -1,0 +1,16 @@
+title: AccountExternalReference
+x-stoplight:
+  id: er3oqrjcoumwj
+type: object
+description: An account external reference
+properties:
+  type:
+    type: string
+    description: External reference type
+    x-stoplight:
+      id: gezwg4wfuew99
+  reference:
+    type: string
+    description: External reference value
+    x-stoplight:
+      id: jo2k6qrogpz39

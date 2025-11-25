@@ -1,0 +1,6 @@
+title: AccountId
+x-stoplight:
+  id: rj8uz41jppebe
+type: string
+description: Account identifier
+example: ACC123

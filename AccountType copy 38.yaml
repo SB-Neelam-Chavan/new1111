@@ -1,0 +1,12 @@
+title: AccountType
+x-stoplight:
+  id: wtco823u30ik1
+type: string
+description: Account Type
+enum:
+  - CURRENT
+  - SAVINGS
+  - SUB_ACCOUNT
+  - DEDICATED
+  - MONEYPOT
+  - TECHNICAL

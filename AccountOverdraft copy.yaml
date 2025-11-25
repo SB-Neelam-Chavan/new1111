@@ -1,0 +1,28 @@
+title: AccountOverdraft
+x-stoplight:
+  id: aqgg6npv5ewwl
+type: object
+properties:
+  currency:
+    description: Alpha ISO code of associated currency
+    type: string
+    example: EUR
+    x-stoplight:
+      id: rdc5j0ahhi4r4
+  display:
+    type: string
+    example: '13,37 €'
+    x-stoplight:
+      id: sw2kyl58dd8yz
+  value:
+    description: Amount without separator and symbol
+    type: integer
+    example: 1337
+    x-stoplight:
+      id: ouhp3w2zppmib
+  source:
+    description: Source of the configured overdraft
+    type: string
+    example: Account
+    x-stoplight:
+      id: cu9n70m50vblc

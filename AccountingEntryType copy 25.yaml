@@ -1,0 +1,11 @@
+title: AccountingEntryType
+x-stoplight:
+  id: mwiwr1397acg1
+type: string
+enum:
+  - TRANSFER
+  - FEE
+  - COMMISSION
+  - TAX
+  - DISCOUNT
+  - INTEREST

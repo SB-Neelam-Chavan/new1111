@@ -1,0 +1,18 @@
+title: UserProfileOwner
+x-stoplight:
+  id: blicz9dcnr8ka
+type: object
+readOnly: true
+description: Identity owner of the profile
+required:
+  - id
+  - role
+properties:
+  id:
+    $ref: ./ReadOnlyIdentityId.yaml
+    x-stoplight:
+      id: s51stnpqlwqnb
+  role:
+    $ref: ./IdentityRole.yaml
+    x-stoplight:
+      id: 0yeyxzu86c0wx

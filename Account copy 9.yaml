@@ -1,0 +1,138 @@
+title: Account
+x-stoplight:
+  id: 5coekz04x8ywe
+type: object
+required:
+  - id
+  - currency
+  - currencyAlpha
+  - ownerName
+  - name
+  - productId
+  - type
+  - status
+  - balances
+  - createdAt
+  - lastChangedAt
+properties:
+  id:
+    $ref: ./AccountNumber.yaml
+    x-stoplight:
+      id: 3cpvigc9nq705
+  iban:
+    $ref: ./IBAN.yaml
+    x-stoplight:
+      id: kxuh0i9yjwnlr
+  currency:
+    $ref: ./CurrencyNumeric.yaml
+    x-stoplight:
+      id: c3jsrcnx7hxxh
+  currencyAlpha:
+    $ref: ./CurrencyAlpha.yaml
+    x-stoplight:
+      id: xd5gdq6ssuf14
+  userId:
+    $ref: ./IdentityId.yaml
+    x-stoplight:
+      id: cq0uj9f5bo38h
+  ownerName:
+    type: string
+    description: owner Name
+    readOnly: true
+    x-stoplight:
+      id: wlaolx6o2elad
+  name:
+    type: string
+    description: The account label
+    example: 'Current account #123546'
+    readOnly: true
+    x-stoplight:
+      id: 70ojdqq6749v6
+  productId:
+    $ref: ./ProductId.yaml
+    x-stoplight:
+      id: pp17aic69qqpv
+  type:
+    $ref: ./AccountType.yaml
+    x-stoplight:
+      id: zbgjmtbpcavhc
+  status:
+    $ref: ./AccountStatus.yaml
+    x-stoplight:
+      id: id5p1jmdmb1iq
+  bic:
+    allOf:
+      - $ref: ./BIC.yaml
+        x-stoplight:
+          id: dp0xqgfmli796
+      - readOnly: true
+        x-stoplight:
+          id: h07tpptwrhbq3
+    x-stoplight:
+      id: kiyw6syjdrsjx
+  balances:
+    $ref: ./Iso20022AccountBalances.yaml
+    x-stoplight:
+      id: bfcu01xsmkk6b
+  externalReferences:
+    type: array
+    description: collection of external references
+    items:
+      $ref: ./AccountExternalReference.yaml
+      x-stoplight:
+        id: desiwsu1m74j4
+    x-stoplight:
+      id: 6eo9ixw1951ce
+  externalData:
+    $ref: ./ExternalData.yaml
+    x-stoplight:
+      id: mtlkmgq8a8zmo
+  externalId:
+    $ref: ./AccountExternalId.yaml
+    x-stoplight:
+      id: 3pkqvv5idy5x7
+  createdAt:
+    type: string
+    format: date-time
+    readOnly: true
+    x-stoplight:
+      id: vxbujwpnefr70
+  lastUsedAt:
+    type: string
+    format: date-time
+    readOnly: true
+    x-stoplight:
+      id: vh1lj9sfzlpnn
+  lastChangedAt:
+    type: string
+    format: date-time
+    readOnly: true
+    x-stoplight:
+      id: 5e6lv1k6y1arw
+  authorizedOverdraft:
+    example:
+      currency: EUR
+      display: '1, 00 €'
+      value: 100
+      source: Account
+    type: object
+    readOnly: true
+    x-stoplight:
+      id: s6whmc4x4hnu7
+  additionalData:
+    $ref: ./AccountAdditionalData.yaml
+    x-stoplight:
+      id: s7b5al9xb6k4x
+  distributorId:
+    type: integer
+    x-stoplight:
+      id: v2702gq7oexsm
+    example: 123
+  coOwners:
+    x-stoplight:
+      id: d0ozofb2s0fat
+    type: array
+    items:
+      $ref: ./AccountOwner.yaml
+      x-stoplight:
+        id: hmytlch64ynrx

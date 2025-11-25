@@ -1,0 +1,14 @@
+title: Duration
+x-stoplight:
+  id: ovsbo9y6hk92m
+type: object
+properties:
+  value:
+    type: integer
+    example: 42
+    x-stoplight:
+      id: z51b72jebqhd6
+  unit:
+    $ref: ./Periodicity.yaml
+    x-stoplight:
+      id: k9v4vs8xxpzee

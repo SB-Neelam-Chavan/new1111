@@ -1,0 +1,11 @@
+title: IdentityStatusEnum
+x-stoplight:
+  id: z3k1qyh4vud60
+type: string
+enum:
+  - INITIATED
+  - PENDING
+  - OPENED
+  - BLOCKED
+  - CLOSED
+  - INIBLOCKED

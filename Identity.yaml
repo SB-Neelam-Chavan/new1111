@@ -1,0 +1,58 @@
+title: Identity
+x-stoplight:
+  id: 7hfyl5t3bigbn
+type: object
+description: An Identity
+required:
+  - id
+  - legalType
+  - kyc
+  - role
+  - creationDate
+  - updateDate
+properties:
+  id:
+    $ref: ./IdentityId.yaml
+    x-stoplight:
+      id: tamte2rhv6bq2
+  legalType:
+    $ref: ./LegalType.yaml
+    x-stoplight:
+      id: 7wbfx4lzussi0
+  kyc:
+    $ref: ./Kyc.yaml
+    x-stoplight:
+      id: p6inxxqsouepn
+  profileId:
+    $ref: ./ProfileId.yaml
+    x-stoplight:
+      id: sb3kh6nbsgasf
+  distributorId:
+    $ref: ./IdentityId.yaml
+    x-stoplight:
+      id: 1g7h1tvucyff8
+  externalId:
+    $ref: ./ExternalId.yaml
+    x-stoplight:
+      id: srki44ube98ii
+  role:
+    $ref: ./IdentityRole.yaml
+    x-stoplight:
+      id: 75fyt97udrimq
+  creationDate:
+    type: string
+    format: date-time
+    description: Identity's creation date
+    x-stoplight:
+      id: pg4wnp9mb95em
+  updateDate:
+    type: string
+    format: date-time
+    description: Identity's last update date
+    x-stoplight:
+      id: 3oz722pk2ndkg
+  kycExpirationDate:
+    format: date-time
+    description: Identity's closest KYC expiration date
+    x-stoplight:
+      id: ajugg32tn9xz3
